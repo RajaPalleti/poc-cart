@@ -51,14 +51,14 @@ export default function Cart({ cartList }) {
                                 <span><b>-$
                                     {
                                         cartList ?
-                                            cartList.reduce((a, c) => a + ((c.discount * c.price.display) / 100) * c.quantity, 0) : 0
+                                            cartList.reduce((a, c) => (a + ((c.discount * c.price.display) / 100) * c.quantity).toFixed(2), 0) : 0
                                     }</b>
                                 </span>
                             </p>
                             <p className="total-row">
                                 <span>Type Discount
                                 </span>
-                                <span><b>$0</b></span>
+                                <span><b>-$0</b></span>
                             </p>
                             <p className="total-row final">
                                 <span>Order Total
@@ -66,7 +66,7 @@ export default function Cart({ cartList }) {
                                 <span><b>$
                                     {
                                         cartList ?
-                                            cartList.reduce((a, c) => a + ((c.price.display - (c.discount * c.price.display) / 100)) * c.quantity, 0) : 0
+                                            cartList.reduce((a, c) => (a + ((c.price.display - (c.discount * c.price.display) / 100)) * c.quantity).toFixed(2), 0) : 0
                                     }</b>
                                 </span>
                             </p>
