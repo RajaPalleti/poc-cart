@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/poc-cart/static/css/main.911b068d.chunk.css",
+    "main.js": "/poc-cart/static/js/main.ef23051f.chunk.js",
+    "main.js.map": "/poc-cart/static/js/main.ef23051f.chunk.js.map",
+    "runtime-main.js": "/poc-cart/static/js/runtime-main.35c1ad64.js",
+    "runtime-main.js.map": "/poc-cart/static/js/runtime-main.35c1ad64.js.map",
+    "static/css/2.da1eef19.chunk.css": "/poc-cart/static/css/2.da1eef19.chunk.css",
+    "static/js/2.5dad5b33.chunk.js": "/poc-cart/static/js/2.5dad5b33.chunk.js",
+    "static/js/2.5dad5b33.chunk.js.map": "/poc-cart/static/js/2.5dad5b33.chunk.js.map",
+    "static/js/3.a8a40468.chunk.js": "/poc-cart/static/js/3.a8a40468.chunk.js",
+    "static/js/3.a8a40468.chunk.js.map": "/poc-cart/static/js/3.a8a40468.chunk.js.map",
+    "index.html": "/poc-cart/index.html",
+    "static/css/2.da1eef19.chunk.css.map": "/poc-cart/static/css/2.da1eef19.chunk.css.map",
+    "static/css/main.911b068d.chunk.css.map": "/poc-cart/static/css/main.911b068d.chunk.css.map",
+    "static/js/2.5dad5b33.chunk.js.LICENSE.txt": "/poc-cart/static/js/2.5dad5b33.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35c1ad64.js",
+    "static/css/2.da1eef19.chunk.css",
+    "static/js/2.5dad5b33.chunk.js",
+    "static/css/main.911b068d.chunk.css",
+    "static/js/main.ef23051f.chunk.js"
+  ]
+}
