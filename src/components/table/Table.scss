@@ -1,0 +1,33 @@
+table{
+    width: 100%;
+    border: 1px solid #ccc;
+    th{
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
+    td{
+        border: 1px solid #ccc;
+        padding: 5px;
+        .item-name-count{
+            display: flex;
+            justify-content: space-between;
+            .item-count{
+                background-color: #70D059;
+                padding: 0 5px;
+                border-radius: 5px;
+                color: #fff;
+            }
+        }
+    }
+    .qty{
+        span{
+            padding: 5px 10px;
+            &.increment{
+                cursor: pointer;
+            }
+            &.decrement{
+                cursor: pointer;
+            }
+        }
+    }
+}

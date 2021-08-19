@@ -1,0 +1,6 @@
+.btn-outline-info{
+    border: 2px solid rgb(0, 162, 255);
+    color: rgb(0, 162, 255);
+    border-radius: 5px;
+    padding: 2px 5px;
+}

@@ -1,0 +1,121 @@
+.cart-title{
+    text-align: center;
+    padding: 5px;
+    @media(max-width: 767px){
+        padding: 10px 0;
+    }
+    &.no-items{
+        padding: 30px 0;
+        font-size: 24px;
+    }
+}
+.all-items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.cart-left {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 auto; */
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  flex: 1;
+}
+.cart-right {
+  flex: 0 0 25%;
+}
+.item {
+  position: relative;
+  border: 1px solid #ccc;
+  flex: 0 0 31.8%;
+}
+.discount {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: #70d059;
+  padding: 0px 8px;
+  color: #fff;
+}
+.item-image {
+  padding: 20px;
+  text-align: center;
+}
+.item-image img {
+  max-width: 100px;
+  object-fit: contain;
+}
+.item-info {
+  background-color: #e0e0e0;
+  padding: 10px;
+}
+.item-name {
+  font-weight: 600;
+}
+.prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-price-display {
+  text-decoration: line-through;
+  text-decoration-color: #f00;
+  text-decoration-thickness: 2px;
+}
+.item-price-actual {
+  font-weight: bold;
+  margin-left: 15px;
+}
+.total {
+  border: 1px solid #ccc;
+  margin-top: 15px;
+}
+.total h6 {
+  padding: 5px 15px 0;
+}
+.total-row {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.total-row.final {
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0e0e0;
+}
+.item-count {
+  background-color: #70d059;
+  padding: 0 5px;
+  border-radius: 5px;
+  color: #fff;
+  margin-left: 5px;
+}
+@media(max-width: 767px) {
+    .cart-left {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 10px;
+        justify-content: center;
+      }
+      .all-items {
+        grid-template-columns: auto;
+        margin: 0;
+      }
+      .cart-right {
+        flex: 0 0 100%;
+        padding: 0 10px;
+      }
+      .item {
+        width: 47%;
+        flex: 0 0 47%;
+      }
+}
