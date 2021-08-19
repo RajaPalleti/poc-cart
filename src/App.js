@@ -180,7 +180,10 @@ class App extends React.Component {
       <shopContext.Provider value={{ addItem: this.addItem, removeItem: this.removeItem, countChange: this.countChange, filter: this.filter, cartList: selectedItems }}>
         <div className="App">
           <header className="main-head">
+          <Link to="/">
+
             <span className="logo">POC</span>
+          </Link>
             {
               selectedItems.length > 0 && history.location.pathname !== '/cart' && this.state.timer?
                 <Title label={selectedItems[selectedItems.length - 1].name + ' added to cart'} className="added-item" />
@@ -204,7 +207,7 @@ class App extends React.Component {
                   <span className="back-icon" title="Back"><FaArrowLeft /></span>
                 </Link>
             }
-            <Route exact={true} path="/">
+            <Route exact={true} path={`${process.env.PUBLIC_URL}/`} >
               <section className="section">
                 {
                   window.innerWidth > 767 ?
@@ -307,7 +310,7 @@ class App extends React.Component {
                 </div>
               </section>
             </Route>
-            <Route path="/cart" component={Cart}>
+            <Route path={`${process.env.PUBLIC_URL}/cart`} component={Cart}>
               <Cart cartList={this.state.selectedItems} /></Route>
           </main>
         </div>
