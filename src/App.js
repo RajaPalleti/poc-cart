@@ -180,7 +180,7 @@ class App extends React.Component {
       <shopContext.Provider value={{ addItem: this.addItem, removeItem: this.removeItem, countChange: this.countChange, filter: this.filter, cartList: selectedItems }}>
         <div className="App">
           <header className="main-head">
-          <Link to="/">
+          <Link to={`${process.env.PUBLIC_URL}/`}>
 
             <span className="logo">POC</span>
           </Link>
@@ -197,13 +197,13 @@ class App extends React.Component {
             }
           </header>
           <main>
-            <Link to="/"></Link>
+            <Link to={`${process.env.PUBLIC_URL}/`}></Link>
             {
-              history.location.pathname !== '/cart' ?
-                <Link to="/cart" className="cart-link">
+              !history.location.pathname.includes('/cart') ?
+                <Link to={`${process.env.PUBLIC_URL}/cart`} className="cart-link">
                   <span className="cart-icon"><FaCartPlus /><span className="cart-count">{selectedItems ? selectedItems.length : null}</span></span>
                 </Link> :
-                <Link to="/" className="back">
+                <Link to={`${process.env.PUBLIC_URL}/`} className="back">
                   <span className="back-icon" title="Back"><FaArrowLeft /></span>
                 </Link>
             }
